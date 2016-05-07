@@ -1,0 +1,6 @@
+c:\users\dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\bin\Debug\Gestion de Cliente.exe.config
+C:\Users\Dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\bin\Debug\Gestion de Cliente.exe
+C:\Users\Dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\bin\Debug\Gestion de Cliente.pdb
+C:\Users\Dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\obj\Debug\Gestion de Cliente.csprojResolveAssemblyReference.cache
+C:\Users\Dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\obj\Debug\Gestion de Cliente.exe
+C:\Users\Dan\documents\visual studio 2015\Projects\Inmobiliaria\Gestion de Cliente\obj\Debug\Gestion de Cliente.pdb
