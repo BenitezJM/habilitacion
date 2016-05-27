@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    class Inmueble
+    abstract class Inmueble
     {
         private bool iAguaPotable;
         private bool iElectricidad;
