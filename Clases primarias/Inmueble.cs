@@ -6,69 +6,31 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    abstract class Inmueble
+    public abstract class Inmueble
     {
-        private bool iAguaPotable;
-        private bool iElectricidad;
-        private bool iGas;
-        private string Observaciones;
-        private bool iDisponible;
-        private string estadoI;
-        private Cliente iDueño;
-        private Domicilio iDir;
 
-        public Inmueble() { }
-        public Inmueble(Cliente pDueño, Domicilio pDir, bool pAguaPotable, bool pElectricidad, bool pGas, bool pDisponible, string pObs, string pEstado)
-        {
-            this.iDueño = pDueño;
-            this.iDir = pDir;
-            this.iAguaPotable = pAguaPotable;
-            this.iElectricidad = pElectricidad;
-            this.iGas = pGas;
-            this.iDisponible = pDisponible;
-            this.Observaciones = pObs;
-            this.estadoI = pEstado;
-        }
+         private bool iAguaPotable;
+         private bool iElectricidad;
+         private bool iGas;
+         private string Observaciones;
+         private bool iDisponible;
+         private string iestadoI;
+         private Cliente iDueño;
+         private Domicilio iDir;
 
-        public bool aguaPotable
-        {
-            /// set { iAguaPotable = value; }
-            get { return this.aguaPotable; }
-        }
+        public abstract int id { get; set; }
 
-        public bool electricidad
-        {
-            get { return this.iElectricidad; }
-        }
+        public abstract Boolean aguaPotable { get; set; }
 
-        public bool gas
-        {
-            get { return this.iGas; }
-        }
+        public abstract Boolean electricidad { get; set; }
 
-        public bool disponible
-        {
-            get { return this.iDisponible; }
-        }
+        public abstract Boolean gas { get; set; }
 
-        public string observacion
-        {
-            get { return this.Observaciones; }
-        }
+        public abstract string observaciones { get; set; }
 
-        public string estado
-        {
-            get { return this.estadoI; }
-        }
+        public abstract Boolean disponible { get; set; }
 
-        internal static void AgregarInmueble(Inmueble pInmueble)
-        {
-            ///
-        }
-
-        static void BajaInmueble(Inmueble pInmueble)
-        {
-
-        }
+        public abstract string estadoI { get; set; }
+                                         
     }
 }

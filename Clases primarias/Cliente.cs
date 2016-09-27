@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    class Cliente : Persona
+    class Cliente 
     {
+        private string iNombre;
+        private string iApellido;
         private int iIdCliente;
         private int iTelefono;
+        private int iDNI;
 
-        public Cliente(string nombre, string apellido, int pDNI, int telefono) : base (nombre, apellido, pDNI) {
+        public Cliente(string pNombre, string pApellido, int pDNI, int pTelefono) { 
             ///Falta idCliente generado automaticamente. 
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.DNI = pDNI;
-            this.iTelefono = telefono;
+            this.iNombre = pNombre;
+            this.iApellido = pApellido;
+            this.iDNI = pDNI;
+            this.iTelefono = pTelefono;
         }
 
         public int idCliente {
