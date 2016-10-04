@@ -11,6 +11,7 @@ namespace Clases_primarias
     {
         static void Main(string[] args)
         {
+			//código del main
         }
     }
 }
