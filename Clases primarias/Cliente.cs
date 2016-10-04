@@ -15,7 +15,7 @@ namespace Clases_primarias
         private int iDNI;
 
         public Cliente(string pNombre, string pApellido, int pDNI, int pTelefono) { 
-            ///Falta idCliente generado automaticamente. 
+            ///Falta idCliente generado automaticamente. "holasww"
             this.iNombre = pNombre;
             this.iApellido = pApellido;
             this.iDNI = pDNI;
