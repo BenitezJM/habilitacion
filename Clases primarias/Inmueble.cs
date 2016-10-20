@@ -9,28 +9,57 @@ namespace Clases_primarias
     public abstract class Inmueble
     {
 
-         private bool iAguaPotable;
-         private bool iElectricidad;
-         private bool iGas;
-         private string Observaciones;
-         private bool iDisponible;
-         private string iestadoI;
-         private Cliente iDueño;
-         private Domicilio iDir;
+        public int iId;
+        public bool iAguaPotable;
+        public bool iElectricidad;
+        public bool iGas;
+        public string iObservaciones;
+        public bool iDisponible;
+        public string iEstadoI;
+        private Domicilio iDir;
 
-        public abstract int id { get; set; }
+        public int id {
+            set { iId = value; }
+            get { return iId; }
+        }
 
-        public abstract Boolean aguaPotable { get; set; }
+        
+        public bool aguaPotable {
+            set { iAguaPotable = value; }
+            get { return iAguaPotable; }
+        }
 
-        public abstract Boolean electricidad { get; set; }
+        public bool electricidad
+        {
+            set { iElectricidad = value; }
+            get { return iElectricidad; }
+        }
 
-        public abstract Boolean gas { get; set; }
+        public bool gas
+        {
+            set { iGas = value; }
+            get { return iGas; }
+        }
 
-        public abstract string observaciones { get; set; }
+        public string observaciones
+        {
+            set { iObservaciones = value; }
+            get { return iObservaciones; }
+        }
 
-        public abstract Boolean disponible { get; set; }
+        public bool disponible
+        {
+            set { iDisponible = value; }
+            get { return iDisponible; }
+        }
 
-        public abstract string estadoI { get; set; }
-                                         
+        public string estadoI
+        {
+            set { iEstadoI = value; }
+            get { return iEstadoI; }
+        }
+
+
+
     }
 }

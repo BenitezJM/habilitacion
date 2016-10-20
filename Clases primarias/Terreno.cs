@@ -6,23 +6,34 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    class Terreno:Inmueble
+    class Terreno : Inmueble
     {
-        public Terreno() { }
+        private int iMetrosCuadrados;
+        private bool iCloaca;
 
-        public override int id { get; set; }
+        public Terreno(int pMetrosCuadrados, bool pCloaca, int pId, 
+            bool pAguaPotable, bool pElectricidad, bool pGas, 
+            string pObservaciones, bool pDisponible, string pEstadoI) {
+            iMetrosCuadrados = pMetrosCuadrados;
+            iCloaca = pCloaca;
+            id = pId;
+            aguaPotable = pAguaPotable;
+            electricidad = pElectricidad;
+            gas = pGas;
+            observaciones = pObservaciones;
+            disponible = pDisponible;
+            estadoI = pEstadoI;
+        }
 
-        public override bool aguaPotable { get; set; }
+        public int metrosCuadrados {
+            set { iMetrosCuadrados = value; }
+            get { return iMetrosCuadrados; }
+        }
 
-        public override bool electricidad { get; set; }
-
-        public override bool gas { get; set; }
-
-        public override string observaciones { get; set; }
-
-        public override bool disponible { get; set; }
-
-        public override string estadoI { get; set; }
+        public bool Cloaca {
+            set { iCloaca = value; }
+            get { return iCloaca; }
+        }
 
     }
 }
