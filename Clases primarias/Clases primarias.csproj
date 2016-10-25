@@ -43,26 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alquiler.cs" />
-    <Compile Include="Autorizacion.cs" />
-    <Compile Include="Ciudad.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Comercio.cs" />
-    <Compile Include="Contrato.cs" />
-    <Compile Include="Cuota.cs" />
-    <Compile Include="Domicilio.cs" />
+    <Compile Include="Operaciones\Alquiler.cs" />
+    <Compile Include="Operaciones\Autorizacion.cs" />
+    <Compile Include="Clientes\Ciudad.cs" />
+    <Compile Include="Clientes\Cliente.cs" />
+    <Compile Include="Inmuebles\Comercio.cs" />
+    <Compile Include="Operaciones\Contrato.cs" />
+    <Compile Include="Operaciones\Cuota.cs" />
+    <Compile Include="Clientes\Domicilio.cs" />
     <Compile Include="Fachada.cs" />
-    <Compile Include="Inmueble.cs" />
-    <Compile Include="Operacion.cs" />
+    <Compile Include="Inmuebles\Inmueble.cs" />
+    <Compile Include="Operaciones\Operacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provincia.cs" />
-    <Compile Include="Recibo.cs" />
-    <Compile Include="Rural.cs" />
-    <Compile Include="Terreno.cs" />
-    <Compile Include="Venta.cs" />
-    <Compile Include="Visita.cs" />
-    <Compile Include="Vivienda.cs" />
+    <Compile Include="Clientes\Provincia.cs" />
+    <Compile Include="Operaciones\Recibo.cs" />
+    <Compile Include="Inmuebles\Rural.cs" />
+    <Compile Include="Inmuebles\Terreno.cs" />
+    <Compile Include="Operaciones\Venta.cs" />
+    <Compile Include="Operaciones\Visita.cs" />
+    <Compile Include="Inmuebles\Vivienda.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,10 +11,12 @@ namespace Clases_primarias
         private int iId;
         private string iNombre;
         private int iCPostal;
+        private Provincia iProvincia;
 
-        public Ciudad(string pNombre, int pCPostal) {
+        public Ciudad(string pNombre, int pCPostal, Provincia pProvincia) {
             iNombre = pNombre;
             iCPostal = pCPostal;
+            iProvincia = pProvincia;
         }
 
         public string nombre {

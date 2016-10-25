@@ -13,21 +13,27 @@ namespace Clases_primarias
         private int iIdDomicilio;
         private int iPiso;
         private string iDepto;
+        private Ciudad iCiudad;
+        private Provincia iProvincia;
 
         public Domicilio() { }
 
-        public Domicilio(String pCalleNombre, int pNumero) {
+        public Domicilio(String pCalleNombre, int pNumero, Ciudad pCiudad, Provincia pProvincia) {
             iCalleNombre = pCalleNombre;
             iNumero = pNumero;
+            iCiudad = pCiudad;
+            iProvincia = pProvincia;
         }
 
-        public Domicilio(String pCalleNombre, int pNumero, int pPiso, string pDepto)
+        public Domicilio(String pCalleNombre, int pNumero, int pPiso, string pDepto, Ciudad pCiudad, Provincia pProvincia)
         {
 
             iCalleNombre = pCalleNombre;
             iNumero = pNumero;
             iPiso = pPiso;
             iDepto = pDepto;
+            iCiudad = pCiudad;
+            iProvincia = pProvincia;
         }
 
         public String calleNombre
