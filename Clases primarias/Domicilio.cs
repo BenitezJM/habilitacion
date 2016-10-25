@@ -6,36 +6,51 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    class Domicilio  ///MODIFICAR A COMO ESTA EN EL DIAGRAMA DE CLASES, ESTA VERSION ES VIEJA.
+    class Domicilio  
     {
         private String iCalleNombre;
         private int iNumero;
         private int iIdDomicilio;
+        private int iPiso;
+        private string iDepto;
 
-        public Domicilio() {}
+        public Domicilio() { }
 
-        public Domicilio(String pCalleNombre, int pNumero, int pIdDomicilio)
+        public Domicilio(String pCalleNombre, int pNumero) {
+            iCalleNombre = pCalleNombre;
+            iNumero = pNumero;
+        }
+
+        public Domicilio(String pCalleNombre, int pNumero, int pPiso, string pDepto)
         {
 
-            this.iCalleNombre = pCalleNombre;
-            this.iNumero = pNumero;
-            this.iIdDomicilio = pIdDomicilio;
+            iCalleNombre = pCalleNombre;
+            iNumero = pNumero;
+            iPiso = pPiso;
+            iDepto = pDepto;
         }
 
         public String calleNombre
-        {            
+        {
+            set { iCalleNombre = value; }
             get { return this.iCalleNombre; }
         }
 
         public int numero
         {
+            set { iNumero = value; }
             get { return this.iNumero; }
         }
 
-        public int domicilio
+        public int piso
         {
-            get { return this.iIdDomicilio; }
+            set { iPiso = value; }
+            get { return this.iPiso; }
+        }
+
+        public string depto {
+            set { iDepto = value; }
+            get { return iDepto; }
         }
     }
-
 }
