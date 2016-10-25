@@ -19,6 +19,8 @@ namespace Clases_primarias
         private Domicilio iDomicilio;
         //dirección, Cuit, 
 
+        public Cliente() { }
+
         public Cliente(string pNombre, string pApellido, string pRazonSocial, int pDNI, int pTelefono, string pEmail, int pCodigoPostal, Domicilio pDomicilio)
         {
             ///Falta idCliente generado automaticamente. "holasww"
@@ -33,42 +35,47 @@ namespace Clases_primarias
 
         public int idCliente
         {
+            
             get { return this.iIdCliente; }
         }
 
-        public string Nombre
+        public string nombre
         {
+            set { iNombre = value; }
             get { return this.iNombre; }
         }
 
-        public string Apellido
+        public string apellido
         {
             get { return this.iApellido; }
         }
 
-        public string RazonSocial
+        public string razonSocial
         {
             get { return this.iRazonSocial; }
         }
 
-        public int DNI
+        public int dni
         {
             get { return this.iDNI; }
         }
 
-        public string Email
+        public string email
         {
             get { return this.iEmail; }
         }
 
-        public int CodigoPostal
+        public int codigoPostal
         {
             get { return this.iCodigoPostal; }
         }
 
-        public int Telefono
+        public int telefono
         {
             get { return this.iTelefono; }
         }
+
+
+        
     }
 }

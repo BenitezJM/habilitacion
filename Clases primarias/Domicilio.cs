@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases_primarias
 {
-    class Domicilio
+    class Domicilio  ///MODIFICAR A COMO ESTA EN EL DIAGRAMA DE CLASES, ESTA VERSION ES VIEJA.
     {
         private String iCalleNombre;
         private int iNumero;

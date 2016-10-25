@@ -60,6 +60,5 @@ namespace Clases_primarias
         }
 
 
-
     }
 }
