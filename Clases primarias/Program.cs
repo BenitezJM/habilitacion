@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Otro nuevo
+//Otro nuevo55
 namespace Clases_primarias
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //código del main
+            //holus soy el chino
         }
     }
 }
