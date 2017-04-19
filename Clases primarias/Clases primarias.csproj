@@ -48,6 +48,7 @@
     <Compile Include="Clientes\Ciudad.cs" />
     <Compile Include="Clientes\Cliente.cs" />
     <Compile Include="Inmuebles\Comercio.cs" />
+    <Compile Include="Operaciones\BoletaDeCompraVenta.cs" />
     <Compile Include="Operaciones\Contrato.cs" />
     <Compile Include="Operaciones\Cuota.cs" />
     <Compile Include="Clientes\Domicilio.cs" />

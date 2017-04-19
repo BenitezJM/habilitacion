@@ -14,18 +14,16 @@ namespace Clases_primarias
         private int iPiso;
         private string iDepto;
         private Ciudad iCiudad;
-        private Provincia iProvincia;
 
         public Domicilio() { }
 
-        public Domicilio(String pCalleNombre, int pNumero, Ciudad pCiudad, Provincia pProvincia) {
+        public Domicilio(String pCalleNombre, int pNumero, Ciudad pCiudad) {
             iCalleNombre = pCalleNombre;
             iNumero = pNumero;
             iCiudad = pCiudad;
-            iProvincia = pProvincia;
         }
 
-        public Domicilio(String pCalleNombre, int pNumero, int pPiso, string pDepto, Ciudad pCiudad, Provincia pProvincia)
+        public Domicilio(String pCalleNombre, int pNumero, int pPiso, string pDepto, Ciudad pCiudad)
         {
 
             iCalleNombre = pCalleNombre;
@@ -33,7 +31,6 @@ namespace Clases_primarias
             iPiso = pPiso;
             iDepto = pDepto;
             iCiudad = pCiudad;
-            iProvincia = pProvincia;
         }
 
         public String calleNombre

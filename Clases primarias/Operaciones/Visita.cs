@@ -13,10 +13,11 @@ namespace Clases_primarias
         private int iHora;
         private int iDuracionAproximada;
         private Cliente iVisitante;
+        private Inmueble iInmueble;
 
         public Visita() { }
 
-        public Visita(int pIdVisita, DateTime pFecha, int pHora, int pDuracionAproximada, Cliente pVisitante)
+        public Visita(int pIdVisita, DateTime pFecha, int pHora, int pDuracionAproximada, Cliente pVisitante, Inmueble pInmueble)
         {
 
             this.iIdVisita = pIdVisita;
@@ -24,6 +25,7 @@ namespace Clases_primarias
             this.iHora = pHora;
             this.iDuracionAproximada = pDuracionAproximada;
             this.iVisitante = pVisitante;
+            this.iInmueble = pInmueble;
         }
 
         public int idVisita
@@ -40,6 +42,7 @@ namespace Clases_primarias
         {
             get { return this.iHora; }
         }
+
         public int duracionAproxiada
         {
             get { return this.iDuracionAproximada; }
@@ -50,6 +53,15 @@ namespace Clases_primarias
             get { return this.iVisitante; }
         }
 
+        public Inmueble inmueble {
+            set { iInmueble = value; }
+            get { return iInmueble; }
+        }
+
+        public Visita BuscarVisita(Inmueble pInmueble, DateTime pFecha) {
+
+            return;
+        }
     }
 }
 

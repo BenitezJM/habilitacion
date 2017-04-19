@@ -74,8 +74,7 @@ namespace Clases_primarias
         {
             get { return this.iTelefono; }
         }
-
-
         
+          
     }
 }
